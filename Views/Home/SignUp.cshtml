@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+
+    <title>Sign Up</title>
+
+    <link href="~/SignUp/css/bootstrap.css" rel="stylesheet">
+    <!-- Plugins Styles -->
+    <link href="~/SignUp/css/font-awesome.css" rel="stylesheet">
+    <link href="~/SignUp/css/animate.css" rel="stylesheet">
+    <!-- Skin Styles -->
+    <link href="~/SignUp/css/xtraform.css" rel="stylesheet">
+    <!-- demo styles -->
+    <style>
+        body {
+            padding: 30px 20px 0 20px;
+        }
+        .demo-title span {
+            color: #29A1D3;
+        }
+        .demo-title h1 {
+            font-weight: bold;
+        }
+        textarea {
+            resize: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Container -->
+    <div id="form-container" class="container">
+        <!-- Logo & title =========================================================== -->
+        <div class="text-center demo-title bounceInDown animated">
+            <h1>NCBA&E<span> Form</span></h1>
+        </div>
+        <!-- //Logo & title =========================================================== -->
+        <br>
+        <!-- Signup form   =========================================================== -->
+             <div class="row">
+            <div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                <div class="panel panel-default flipInX animated">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Sign in</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form id="defaultForm" action="/Home/Add" method="post" novalidate="novalidate" class="bootstrap-validator-form">
+                                <label class="fadeIn animated">Class</label>
+                                <select class="form-control fadeInLeftBig animated" id ="DropdownList1" name="program">
+                                <option>BS-CS</option> <option>MS-CS</option> <option>MS-IT</option> </select>
+                            <label class="fadeIn animated">Name</label>
+                            <input type="text" class="form-control fadeInLeftBig animated" name="name" placeholder="Name">
+                            <label class="fadeIn animated">Address</label>
+                            <textarea class="form-control fadeInLeftBig animated"cols="22" id="Textarea1" name="address" rows="5" placeholder="Address"></textarea>
+                            <input id="Radiobutton1" name="gender" type="radio" value="Male"/> Male
+                            <input id="Radiobutton2" name="gender" type="radio" value="Female"/> Female
+                            </br>
+                                <label class="fadeIn animated">Password</label>
+                                <input type="password" class="form-control fadeInLeftBig animated" name="password" placeholder="Password">
+                            <label class="fadeIn animated">Subjects</label>
+                            <br/>
+                            <input id="Checkbox1" name="subjects" type="checkbox" value="PPL" /> PPL
+                            <br/>
+                            <input id="Checkbox2" name="subjects" type="checkbox" value="OOP" /> OOP
+                            <br/>
+                            <input id="Checkbox3" name="subjects" type="checkbox" value="CC" /> CC
+                            <br/>
+                            <input id="Checkbox4" name="subjects" type="checkbox" value="TOA" /> TOA
+                            <br/><br/>
+                            <div id="submit-form-group" class="form-group bounceIn animated">
+                            <button type="submit" class="btn btn-primary">Submit</button></form></div></div></div></div>
+</body>
+</html>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
